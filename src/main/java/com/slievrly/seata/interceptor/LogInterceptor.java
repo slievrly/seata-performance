@@ -34,6 +34,7 @@ public class LogInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2) throws Exception {
         String agent = arg0.getHeader("User-Agent");
         String clientIp = getIpAddr(arg0);
+        LOGGER.info("11");
         LOGGER.info("clientIp:" + clientIp + ",agent:" + agent + ",url:" + arg0.getRequestURI());
         return true;
     }
