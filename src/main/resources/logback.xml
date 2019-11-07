@@ -26,10 +26,10 @@
 
     <appender name="seata-default"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_HOME}/logs/seata-performance.log</file>
+        <file>${LOG_HOME}/seata-performance.log</file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/logs/seata-performance.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <fileNamePattern>${LOG_HOME}/seata-performance.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
             <maxFileSize>2GB</maxFileSize>
             <MaxHistory>7</MaxHistory>
             <totalSizeCap>5GB</totalSizeCap>
